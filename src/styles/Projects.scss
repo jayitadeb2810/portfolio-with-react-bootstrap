@@ -1,0 +1,57 @@
+.projects {
+    width: 100%;
+    padding-top: 130px;
+    background-color: rgb(219, 199, 201);
+  
+ .projectTitle {
+    text-align: center;
+    color: #3e497a;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin: 50px;
+  }
+  
+}
+  /* MENU ITEM STYLING */
+  
+  .projectItem {
+    background-color: rgb(104, 87, 87);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+    margin: 40px;
+    padding: 25px;
+    // border: 1px solid rgb(240, 202, 206);
+    text-align: center;
+    text-decoration: none;
+    color:white;
+  
+  &:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    color: white;
+  }
+
+  .projectItem_content{
+    width: 100%;
+    height: 100%;
+  
+  
+   .bgImage {
+    // border-top-left-radius: 15px;
+    // border-top-right-radius: 15px;
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  
+ h1 {
+    font-size: 25px;
+  }
+}
+}
+

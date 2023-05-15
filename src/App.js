@@ -1,9 +1,26 @@
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
+import Navbar from "./components/navbar";
+import Footer from "./components/Footer";
+import DisplayProjects from "./pages/DisplayProjects";
+import './styles/App.scss';
 
 function App() {
   return (
     <div className="App">
-      Hello World
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<DisplayProjects />} />
+          <Route path="/experience" element={<Experience />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
